@@ -6,3 +6,6 @@ server: ./objects/server.o ./objects/http.o
 
 ./objects/http.o: ./src/http.c ./include/http.h
 	gcc -o ./objects/http.o ./src/http.c -c -ansi -pedantic -Wall
+
+clean:
+	@rm -f ./objects/*.o server
